@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+
+
+$desktop-width-lg: 1440px;
+$secondary-color: #F86338;
+$secondary-color-1: #FFEFEB;
+$background-color-secondary: #E2E2EA;
+$text-color-primary: #11142D;
+$text-color-primary-2: #333333;
+$text-color-secondary: #F3692E;
+$text-color-secondary-2: #7A6005;
+$text-color-fade: #515151;
+$text-color-fade-1: #9A9AB0;
+
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin dm-sans {
+    font-family: 'DM Sans', sans-serif;
+}
+@mixin merriweather {
+    font-family: 'Merriweather', serif;
+}
+
+.dm-sans{
+    font-family: 'DM Sans', sans-serif;
+}
+
+body{
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+

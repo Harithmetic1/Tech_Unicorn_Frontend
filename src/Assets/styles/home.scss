@@ -1,0 +1,123 @@
+@use '../styles/main.scss';
+@import '../styles/main.scss';
+
+.home-container{
+    margin: auto 0 200px 6.5em;
+    @include flex-center;
+    gap: 120px;
+    .lhs{
+        margin-top: 8.625em;
+        h1{
+            @include merriweather;
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 120%;
+            letter-spacing: 0.005em;
+            color: $text-color-primary;
+        }
+        p{
+            @include dm-sans;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 120%;
+            letter-spacing: 0.005em;
+            color: $text-color-fade-1;
+        }
+        button{
+            @include flex-center;
+            @include dm-sans;
+            gap: 15.29px;
+            color: white;
+            background-color: $secondary-color;
+            padding: 18.5px 24px;
+            border-radius: 8px;
+            outline: none;
+            border: none;
+        }
+    }
+    .rhs{
+        display: grid;
+        grid-template-columns: 504px 504px;
+        flex-direction: row;
+        gap: 16px;
+        overflow-x: hidden;
+        .rect{
+            width: 504px;
+            height: 619px;
+            background-color: $background-color-secondary;
+        }
+    }
+}
+
+.second-section{
+    margin: auto 6.5em 200px;
+    display: grid;
+    gap: 16px;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 400px));
+    justify-content: center;
+}
+
+.third-section{
+    margin: auto 6.5em 200px;
+    .new-arrival-container{
+        .new-arrival-title{
+            @include flex-center;
+            justify-content: space-between;
+            h1{
+                @include merriweather;
+                font-weight: 700;
+                font-size: 48px;
+                line-height: 120%;
+                text-align: center;
+                letter-spacing: 0.005em;
+                color: $text-color-primary;
+            }
+            span{
+                font-weight: 400;
+                font-size: 24px;
+                line-height: 120%;
+                text-align: center;
+                letter-spacing: 0.005em;
+                color: $text-color-secondary;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+.fifth-section{
+    margin: auto 6.5rem 200px;
+    .section-header{
+        // @include flex-center;
+        h2{
+            @include merriweather;
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 120%;
+            letter-spacing: 0.005em;
+            color: $text-color-primary;
+        }
+    }
+    .best-seller-container{
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(296px, 296px));
+        gap: 16px;
+    }
+}
+
+
+.sixth-section{
+    margin: auto 6.5rem 200px;
+    @include dm-sans;
+    .title{
+        @include flex-center;
+        h2{
+            @include merriweather;
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 120%;
+            letter-spacing: 0.005em;
+            color: $text-color-primary;
+        }
+    }
+}

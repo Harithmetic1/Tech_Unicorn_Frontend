@@ -1,0 +1,48 @@
+@use '../../Assets/styles/main.scss';
+@import '../../Assets/styles/main.scss';
+
+.catalogue-container{
+    padding: 40px;
+    background-color: $background-color-secondary;
+    width: 320px;
+    height: 480px;
+    .catalogue{
+        display: flex;
+        justify-content: flex-end;
+        align-items: baseline;
+        flex-direction: column;
+        height: 100%;
+        .catalogue-title{
+            h2{
+                @include merriweather;
+                font-weight: 700;
+                font-size: 48px;
+                line-height: 120%;
+                letter-spacing: 0.005em;
+                color: $text-color-primary;
+                margin-bottom: 24px;
+            }
+        }
+        .catalogue-caption{
+            background-color: $background-color-secondary;
+            p{
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 125%;
+                letter-spacing: 0.005em;
+                color: $text-color-fade-1;
+            }
+        }
+        button{
+            margin-top: 56px;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: $secondary-color;
+            padding: 12px;
+            border: none;
+            outline: none;
+            @include flex-center;
+        }
+    }
+}

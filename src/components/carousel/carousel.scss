@@ -1,0 +1,74 @@
+@use '../../Assets/styles/main.scss';
+@import '../../Assets/styles/main.scss';
+
+.carousel-card-container{
+    width: 296px;
+    .carousel-card{ 
+        width: 100%;
+        height: 296px; 
+        position: relative;
+        background-color: white;
+        .like{
+            position: absolute;
+            top: 16px;
+            right: 16px;
+            width: 40px;
+            height: 40px;
+            background-color: white;
+            border-radius: 50%;
+            @include flex-center;
+        }
+    }
+    .carousel-card-description{
+        .category{
+            @include dm-sans;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 130%;
+            text-align: center;
+            letter-spacing: 0.008em;
+            color: $text-color-secondary;
+        }
+        .product-name{
+            @include merriweather;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 120%;
+            text-align: center;
+            letter-spacing: 0.005em;
+            color: $text-color-primary;
+        }
+        .product-desc{
+            @include dm-sans;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 120%;
+            text-align: center;
+            letter-spacing: 0.008em;
+            color: $text-color-fade;
+            height: 40px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            // &::after{
+            //     content: '...'
+            // }
+        }
+        .price{
+            @include merriweather;
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 120%;
+            text-align: center;
+            letter-spacing: 0.005em;
+            color: $text-color-secondary;
+        }
+    }
+}
+
+.swiper-wrapper{
+    max-width: 100vw;
+    // justify-content: center;
+    // .swiper-slide{
+    //     width: 296px !important; 
+    // }
+}

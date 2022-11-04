@@ -1,0 +1,28 @@
+@use '../../Assets/styles/main.scss';
+@import '../../Assets/styles/main.scss';
+
+
+.testimonial-container{
+    .testimonial{
+        background-color: $secondary-color-1;
+        @include flex-center;
+        flex-direction: column;
+        text-align: center;
+        border-radius: 8px;
+        padding: 88px 125px 31px;
+        .circle{
+            width: 88px;
+            height: 88px;
+            border-radius: 50%;
+            background-color: $background-color-secondary;
+            margin-top: -50px   
+        }
+        .testimonial-name{
+            margin-top: 56px;
+            margin-bottom: 0px;
+        }
+        .testimonial-title{
+            margin-top: 8px;
+        }
+    }
+}

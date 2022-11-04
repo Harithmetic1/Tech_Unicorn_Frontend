@@ -1,0 +1,59 @@
+@use '../../Assets/styles/main.scss';
+@import '../../Assets/styles/main.scss';
+
+.footer-container{
+    background-color: $secondary-color;
+    .footer{
+        margin: auto 6.5em 0px;
+        padding: 73.52px 0px;
+        @include flex-center;
+        .rhs{
+            display: flex;
+            gap: 31.88px;
+            flex-direction: column;
+            p{
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 125%;
+                letter-spacing: 0.005em;
+                color: white;
+            }
+        }   
+        .lhs{
+            display: flex;
+            width: 50vw;
+            gap: 11.0625em;
+            div{
+                width: 132px;
+                gap: 41px;
+            }
+            .contact{
+                width: 195px;
+            }
+            h2{
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 120%;
+                letter-spacing: 0.005em;
+                color: white;
+            }
+            ul{
+                margin: 0;
+                padding: 0;
+                display: flex;
+                flex-direction: column;
+                gap: 40px;
+                li{
+                    list-style-type: none;
+                    display: flex;
+                    gap: 16px;
+                    color: white;
+                    img{
+                        width: 24px;
+                        height: 24px;
+                    }
+                }
+            }
+        }
+    }
+}
